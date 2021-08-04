@@ -53,6 +53,9 @@
           </div>
         </div>
       </nav>
+      <% if user_signed_in? %>
+        <%= render 'searches/search' %>
+      <% end %>
     </header>
     <main>
       <p class="notice"><%= h(flash[:notice]) %></p>
